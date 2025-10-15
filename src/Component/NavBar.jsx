@@ -66,6 +66,18 @@ const NavBar = () => {
           Register
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/dashboard"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#632EE3] font-semibold border-2 border-[#632EE3]"
+              : "text-gray-600 hover:text-[#632EE3]"
+          }
+        >
+          Dashboard
+        </NavLink>
+      </li>
       {user && (
         <>
           <li>

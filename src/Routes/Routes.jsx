@@ -8,6 +8,7 @@ import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import Order from "../Pages/Order";
 import Products from "../Pages/Products";
+import Dashboard from "../Pages/Dashboard";
 
 const Routes = createBrowserRouter([
   {
@@ -44,6 +45,14 @@ const Routes = createBrowserRouter([
         element: (
           <PrivateRoute>
             <Products></Products>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/dashboard",
+        element: (
+          <PrivateRoute>
+            <Dashboard></Dashboard>
           </PrivateRoute>
         ),
       },
